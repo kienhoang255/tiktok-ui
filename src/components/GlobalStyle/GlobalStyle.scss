@@ -1,9 +1,21 @@
 @import 'normalize.css';
 
+:root {
+    --default-layout-header-height: 60px;
+    --default-layout-header-background-color: #f5f5f5;
+    --default-layout-header-border-color: #ddd;
+    --default-layout-width: 1150px;
+    --default-layout-horizontal-spacer: 24px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
 }
 
 body {
@@ -11,4 +23,25 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 22px;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
 }
