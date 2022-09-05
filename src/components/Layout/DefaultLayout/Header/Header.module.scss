@@ -59,6 +59,9 @@
     color: rgb(0, 0, 0, 0.4);
     font-size: 16px;
 }
+.loading {
+    right: 12px;
+}
 
 .clear {
     left: 11px;
@@ -103,6 +106,7 @@
     align-items: center;
 }
 
+.action-btn-message,
 .action-btn {
     background-color: transparent;
     font-size: 1.3rem;
@@ -166,4 +170,26 @@
     object-fit: cover;
     margin-left: 12px;
     cursor: pointer;
+}
+
+.action-btn-message {
+    padding: 4px 0 4px 12px;
+    margin-right: -10px;
+}
+.noti-message {
+    background-color: #f50909;
+    color: white;
+    float: right;
+    width: 23px;
+    height: 18px;
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+    bottom: 10px;
+    right: 12px;
+    font-size: small;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

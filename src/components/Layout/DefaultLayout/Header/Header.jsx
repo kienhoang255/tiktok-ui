@@ -25,6 +25,7 @@ import Button from '../../../Button/Button';
 import Menu from '../../Popper/Menu/Menu';
 import { faPaperPlane, faUser } from '@fortawesome/free-regular-svg-icons';
 import { faBitcoin } from '@fortawesome/free-brands-svg-icons';
+import Avatar from '../../../Avatar/Avatar';
 
 const cx = classNames.bind(styles);
 
@@ -168,11 +169,12 @@ export default function Header() {
                                     <FontAwesomeIcon icon={faPaperPlane} />
                                 </button>
                             </TippyIcon>
-                            <button className={cx('action-btn')}>
+                            <button className={cx('action-btn-message')}>
                                 <FontAwesomeIcon icon={faMessage} />
+                                <div className={cx('noti-message')}>12</div>
                             </button>
                             <Menu items={MENU_USER} onChange={handleMenuChange}>
-                                <img className={cx('user-avatar')} src={require('../../../../assets/images/avatar.jpg')} alt="" />
+                                <Avatar src={require('../../../../assets/images/avatar.jpg')} atl="Name" />
                             </Menu>
                         </>
                     ) : (
